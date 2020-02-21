@@ -1,0 +1,9 @@
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\bin\Debug\Practica2_Ordenamiento.exe.config
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\bin\Debug\Practica2_Ordenamiento.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\bin\Debug\Practica2_Ordenamiento.pdb
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\obj\Debug\Practica2_Ordenamiento.csprojAssemblyReference.cache
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\obj\Debug\Practica2_Ordenamiento.Form1.resources
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\obj\Debug\Practica2_Ordenamiento.Properties.Resources.resources
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\obj\Debug\Practica2_Ordenamiento.csproj.GenerateResource.cache
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\obj\Debug\Practica2_Ordenamiento.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica2_Ordenamiento\obj\Debug\Practica2_Ordenamiento.pdb

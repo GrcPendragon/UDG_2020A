@@ -1,0 +1,6 @@
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_Matrices\bin\Debug\Ejemplo_Matrices.exe.config
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_Matrices\bin\Debug\Ejemplo_Matrices.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_Matrices\bin\Debug\Ejemplo_Matrices.pdb
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_Matrices\obj\Debug\Ejemplo_Matrices.csprojAssemblyReference.cache
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_Matrices\obj\Debug\Ejemplo_Matrices.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_Matrices\obj\Debug\Ejemplo_Matrices.pdb

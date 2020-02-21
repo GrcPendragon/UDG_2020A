@@ -1,0 +1,6 @@
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_if_switch\bin\Debug\Ejemplo_if_switch.exe.config
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_if_switch\bin\Debug\Ejemplo_if_switch.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_if_switch\bin\Debug\Ejemplo_if_switch.pdb
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_if_switch\obj\Debug\Ejemplo_if_switch.csprojAssemblyReference.cache
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_if_switch\obj\Debug\Ejemplo_if_switch.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Ejemplo_if_switch\obj\Debug\Ejemplo_if_switch.pdb

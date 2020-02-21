@@ -1,0 +1,18 @@
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\bin\Debug\Criptografia.exe.config
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\bin\Debug\Criptografia.exe
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\bin\Debug\Criptografia.pdb
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\obj\Debug\Criptografia.csprojAssemblyReference.cache
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\obj\Debug\Criptografia.Form1.resources
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\obj\Debug\Criptografia.Properties.Resources.resources
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\obj\Debug\Criptografia.csproj.GenerateResource.cache
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\obj\Debug\Criptografia.exe
+C:\Users\mg213\source\repos\UDG2020A\Criptografia\obj\Debug\Criptografia.pdb
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\bin\Debug\Criptografia.exe.config
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\bin\Debug\Criptografia.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\bin\Debug\Criptografia.pdb
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\obj\Debug\Criptografia.csprojAssemblyReference.cache
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\obj\Debug\Criptografia.Form1.resources
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\obj\Debug\Criptografia.Properties.Resources.resources
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\obj\Debug\Criptografia.csproj.GenerateResource.cache
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\obj\Debug\Criptografia.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Criptografia\obj\Debug\Criptografia.pdb

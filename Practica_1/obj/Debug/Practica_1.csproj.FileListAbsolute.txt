@@ -1,0 +1,6 @@
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica_1\bin\Debug\Practica_1.exe.config
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica_1\bin\Debug\Practica_1.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica_1\bin\Debug\Practica_1.pdb
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica_1\obj\Debug\Practica_1.exe
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica_1\obj\Debug\Practica_1.pdb
+C:\Users\Fausto Garcia\source\repos\UDG_2020A\Practica_1\obj\Debug\Practica_1.csprojAssemblyReference.cache
