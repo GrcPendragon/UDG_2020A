@@ -13,10 +13,17 @@ namespace Criptografia
 
         private void btnValidar_Click(object sender, EventArgs e)
         {
-            if (txtLlave.Text != "" && txtLlave.Text.Length == 9)
+            string cadena = txtLlave.Text;
+            if (cadena != "")
             {
+                
                 double[,] llave = new double[3, 3];
-                asignarLlave(ref llave);
+                
+                if (cadena.Length < 9)
+                {
+                    cadena = ponerVacios(cadena);
+                }
+                asignarLlave(ref llave, cadena);
                 lblVerificación.Visible = true;
                 lblVerificación.Text = (validaLlave(llave)) ? "Matriz valida" : "Matriz erronea";
                 if (lblVerificación.Text.Equals("Matriz valida"))
@@ -43,50 +50,46 @@ namespace Criptografia
 
         private void btnEncriptar_Click(object sender, EventArgs e)
         {
-            int cont = 0,f=0, c = txtEncriptar.Text.Length;
-            string cadena = txtEncriptar.Text.ToLower();
-            string linea;
-            char[] textoEncriptar = new char[c];
-            double[,] textoCodificado = new double[c/3,3];
-            double[,] resultado = new double[c / 3, 3];
+            int filas = txtEncriptar.Text.Length, cont = 0;
+            string cadena = "";
             double valor = 0;
-            f = txtLlave.Lines.Length;
-            c = txtLlave.Lines[0].Split(',').Length;
-            double[,] llave = new double[f, c];
-            for (int i = 0; i < f; i++)
+            double[,] llave = new double[3, 3];
+            filas = filas % 3 > 0 ? filas / 3 + 1 : filas / 3;
+            double[,] textoCod = new double[filas, 3];
+            //Completar la cadena llave con ceros si su longitud es menor a 9
+            if (cadena.Length < 9)
             {
-                linea = txtLlave.Lines[i].ToLower();
-
-                for (int j = 0; j < c; j++)
-                {
-                    llave[i, j] = Convert.ToDouble(linea.Split(',')[j]);
-                }
+                cadena = ponerVacios(txtLlave.Text);
             }
-            textoEncriptar = cadena.ToCharArray();
+            asignarLlave(ref llave, cadena);
 
-            for (int i = 0; i < 6; i++)
+            cadena = txtEncriptar.Text.ToLower();
+            //Completar la cadena de encriptación en ceros si su longitud es mayor a 0
+            if (cadena.Length % 3 > 0)
             {
-                for (int j = 0; j < 3; j++)
-                {
-                    textoCodificado[i,j] = diccionario(textoEncriptar[cont]);
-                   
-                    cont++;
-                }
+                cadena = ponerVacios(txtEncriptar);
             }
-
+            //Asignacion de los caractes a encriptar a un arreglo numerico
+            for (int f = 0; f < filas; f++)
+            {
+                for (int c = 0; c < 3; c++)
+                {
+                    textoCod[f, c] = diccionario(cadena[cont++]);
+                }
+            } 
+            //Fragmento de codigo que encriptador
             cadena = "";
-            for (int w = 0; w < 6; w++)
+            for (int f = 0; f < filas; f++)
             {
                 for (int x = 0; x < 3; x++)
                 {
                     for (int y = 0; y < 3; y++)
                     {
-                        valor += textoCodificado[w,y] *  llave[y, x];
-                        
+                        valor += textoCod[f, y] * llave[y, x];
+
                     }
-                    cadena += resultado[w, x] + " ";
+                    cadena += valor + " ";
                     valor = 0;
-                    
                 }
             }
 
@@ -96,10 +99,89 @@ namespace Criptografia
 
         private void btnDesencriptar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (txtDesencriptar.Text.Split(' ').Length % 3 > 0)
+                {
+                    MessageBox.Show("Lo sentimos le faltan datos a su mensaje.");
+                    return;
+                }                
+                int filas = txtDesencriptar.Text.Split(' ').Length, cont = 0;
+                filas = filas % 3 > 0 ? filas / 3 + 1 : filas / 3;
+                string cadena = "";
+                string[] cadenDesencriptar = txtDesencriptar.Text.Split(' ');
+                double valor = 0;
+                double[,] llave = new double[3, 3];
+                double[,] textoDes = new double[filas, 3];
+                double[,] identidad = { {1,0,0}, {0,1,0}, {0,0,1} };
+
+                //Completar la cadena llave con ceros si su longitud es menor a 9
+                if (cadena.Length < 9)
+                {
+                    cadena = ponerVacios(txtLlave.Text);
+                }
+                asignarLlave(ref llave, cadena);
+
+                for (int p = 0; p < 3; p++)   //pivote
+                {
+                    double piv = 1 / llave[p, p];
+                    for (int i = 0; i < 3; i++)
+                    {
+                        llave[p, i] *= piv;
+                        identidad[p, i] *= piv;
+                    }
+
+                    for (int i = 0; i < 3; i++)
+                    {
+                        if (p != i)
+                        {
+                            double v = llave[i, p];
+                            for (int j = 0; j < 3; j++)
+                            {
+                                llave[i, j] = -v * llave[p, j] + llave[i, j];
+                                identidad[i, j] = -v * identidad[p, j] + identidad[i, j];
+                            }
+
+                        }
+                    }
+                }
+
+                //Asignacion del mensaje encriptado en arreglo de numeros
+                for (int f = 0; f < filas; f++)
+                {
+                    for (int c = 0; c < 3; c++)
+                    {
+                        textoDes[f, c] = Convert.ToDouble(cadenDesencriptar[cont++]);
+                    }
+                }
+
+                //Fragmento de codigo que encriptador
+                cadena = "";
+                for (int f = 0; f < filas; f++)
+                {
+                    for (int x = 0; x < 3; x++)
+                    {
+                        for (int y = 0; y < 3; y++)
+                        {
+                            valor += textoDes[f, y] * identidad[y, x];
+
+                        }
+                        cadena += diccionario(valor) + " ";
+                        valor = 0;
+                    }
+                }
+
+                txtResultado.Text = cadena;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
             
         }
 
-        //Metodo de validación de llave
+        //Metodo de validación de llave por determinante
         public bool validaLlave(double[,] llave)
         {
             double determinante = 0;
@@ -112,18 +194,39 @@ namespace Criptografia
             }
             return true;
         }
-        public void asignarLlave(ref double[,] llave)
+
+        //Este metodo se encargara de agregarle espacios a nuestra cadena llave
+        // para poder completar nuestra matriz para encriptación
+        public string ponerVacios(string llave)
+        {
+            for (int i = llave.Length-1; i < 9; i++)
+            {
+                llave += " ";
+            }
+            return llave;
+        }
+        public string ponerVacios(TextBox txt)
+        {
+            string cadena = txt.Text;
+            cadena += cadena.Length % 3 == 1 ? "  " : " ";
+            return cadena;
+        }
+
+        //Tomar los datos de entrada del usuario que se usaran como llave para encriptar
+        // y asignarlos a memoria en un arreglo llave
+        public void asignarLlave(ref double[,] llave,string cadena)
         {
             int cont = 0;
             for (int f = 0; f < 3; f++)
             {
                 for (int c = 0; c < 3; c++)
                 {
-                    llave[f, c] = diccionario(txtLlave.Text.ToLower()[cont]);
+                    llave[f, c] = diccionario(cadena[cont]);
                     cont++;
                 }
             }
         }
+
         //Función diccionario
         public double diccionario(char caracter)
         {

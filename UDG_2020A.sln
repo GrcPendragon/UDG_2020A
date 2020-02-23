@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica2_Ordenamiento", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Criptografia", "Criptografia\Criptografia.csproj", "{460C810E-BDB1-44F4-BDE4-65105623B20C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejemplo2_ciclos", "..\..\..\Downloads\ejemplo2_ciclos\ejemplo2_ciclos.csproj", "{EC4E4C2B-90D3-45F4-8634-B83826E646CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{460C810E-BDB1-44F4-BDE4-65105623B20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{460C810E-BDB1-44F4-BDE4-65105623B20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{460C810E-BDB1-44F4-BDE4-65105623B20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4E4C2B-90D3-45F4-8634-B83826E646CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4E4C2B-90D3-45F4-8634-B83826E646CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4E4C2B-90D3-45F4-8634-B83826E646CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4E4C2B-90D3-45F4-8634-B83826E646CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
