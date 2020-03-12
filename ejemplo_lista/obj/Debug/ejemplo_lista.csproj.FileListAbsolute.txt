@@ -1,0 +1,6 @@
+C:\Users\Fausto Garcia\Documents\UDG-2020A\ejemplo_lista\obj\Debug\ejemplo_lista.csprojAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\UDG-2020A\ejemplo_lista\bin\Debug\ejemplo_lista.exe.config
+C:\Users\Fausto Garcia\Documents\UDG-2020A\ejemplo_lista\bin\Debug\ejemplo_lista.exe
+C:\Users\Fausto Garcia\Documents\UDG-2020A\ejemplo_lista\bin\Debug\ejemplo_lista.pdb
+C:\Users\Fausto Garcia\Documents\UDG-2020A\ejemplo_lista\obj\Debug\ejemplo_lista.exe
+C:\Users\Fausto Garcia\Documents\UDG-2020A\ejemplo_lista\obj\Debug\ejemplo_lista.pdb

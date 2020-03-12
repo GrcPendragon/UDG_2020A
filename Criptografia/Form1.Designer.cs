@@ -43,6 +43,7 @@
             this.txtDesencriptar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.lblCaracter = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +73,7 @@
             this.btnValidar.Name = "btnValidar";
             this.btnValidar.Size = new System.Drawing.Size(94, 23);
             this.btnValidar.TabIndex = 2;
-            this.btnValidar.Text = "Confirmar matriz";
+            this.btnValidar.Text = "Verificar palabra";
             this.btnValidar.UseVisualStyleBackColor = true;
             this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
             // 
@@ -80,7 +81,7 @@
             // 
             this.lblVerificación.AutoSize = true;
             this.lblVerificación.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVerificación.Location = new System.Drawing.Point(192, 85);
+            this.lblVerificación.Location = new System.Drawing.Point(295, 54);
             this.lblVerificación.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.lblVerificación.Name = "lblVerificación";
             this.lblVerificación.Size = new System.Drawing.Size(44, 17);
@@ -125,13 +126,14 @@
             // 
             // txtEncriptar
             // 
+            this.txtEncriptar.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtEncriptar.Enabled = false;
+            this.txtEncriptar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEncriptar.Location = new System.Drawing.Point(9, 46);
             this.txtEncriptar.Multiline = true;
             this.txtEncriptar.Name = "txtEncriptar";
             this.txtEncriptar.Size = new System.Drawing.Size(134, 100);
             this.txtEncriptar.TabIndex = 5;
-            this.txtEncriptar.Text = "Flipped Classroom.";
             // 
             // groupBox2
             // 
@@ -170,12 +172,12 @@
             // txtDesencriptar
             // 
             this.txtDesencriptar.Enabled = false;
+            this.txtDesencriptar.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
             this.txtDesencriptar.Location = new System.Drawing.Point(9, 46);
             this.txtDesencriptar.Multiline = true;
             this.txtDesencriptar.Name = "txtDesencriptar";
             this.txtDesencriptar.Size = new System.Drawing.Size(134, 100);
             this.txtDesencriptar.TabIndex = 5;
-            this.txtDesencriptar.Text = "24 9 42 27 22 68 10 11 4 52 43 15 52 37 77 72 47 55";
             // 
             // label4
             // 
@@ -190,17 +192,31 @@
             // 
             // txtResultado
             // 
+            this.txtResultado.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold);
             this.txtResultado.Location = new System.Drawing.Point(27, 382);
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
+            this.txtResultado.ReadOnly = true;
             this.txtResultado.Size = new System.Drawing.Size(379, 55);
             this.txtResultado.TabIndex = 9;
+            // 
+            // lblCaracter
+            // 
+            this.lblCaracter.AutoSize = true;
+            this.lblCaracter.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCaracter.Location = new System.Drawing.Point(88, 82);
+            this.lblCaracter.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.lblCaracter.Name = "lblCaracter";
+            this.lblCaracter.Size = new System.Drawing.Size(0, 17);
+            this.lblCaracter.TabIndex = 10;
+            this.lblCaracter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 450);
+            this.Controls.Add(this.lblCaracter);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox2);
@@ -239,6 +255,7 @@
         private System.Windows.Forms.TextBox txtDesencriptar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.Label lblCaracter;
     }
 }
 

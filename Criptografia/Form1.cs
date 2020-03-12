@@ -25,8 +25,8 @@ namespace Criptografia
                 }
                 asignarLlave(ref llave, cadena);
                 lblVerificación.Visible = true;
-                lblVerificación.Text = (validaLlave(llave)) ? "Matriz valida" : "Matriz erronea";
-                if (lblVerificación.Text.Equals("Matriz valida"))
+                lblVerificación.Text = (validaLlave(llave)) ? "Palabra valida" : "Palabra erronea";
+                if (lblVerificación.Text.Equals("Palabra valida"))
                 {
                     txtEncriptar.Enabled = true;
                     btnEncriptar.Enabled = true;
@@ -63,7 +63,7 @@ namespace Criptografia
             }
             asignarLlave(ref llave, cadena);
 
-            cadena = txtEncriptar.Text.ToLower();
+            cadena = txtEncriptar.Text;
             //Completar la cadena de encriptación en ceros si su longitud es mayor a 0
             if (cadena.Length % 3 > 0)
             {
@@ -93,7 +93,7 @@ namespace Criptografia
                 }
             }
 
-            txtResultado.Text = cadena;
+            txtResultado.Text = cadena.Trim();
 
         }
 
@@ -166,7 +166,7 @@ namespace Criptografia
                             valor += textoDes[f, y] * identidad[y, x];
 
                         }
-                        cadena += diccionario(valor) + " ";
+                        cadena += diccionario(Math.Round(valor,0) ) + " ";
                         valor = 0;
                     }
                 }
@@ -221,8 +221,7 @@ namespace Criptografia
             {
                 for (int c = 0; c < 3; c++)
                 {
-                    llave[f, c] = diccionario(cadena[cont]);
-                    cont++;
+                    llave[f, c] = diccionario(cadena[cont++]);
                 }
             }
         }

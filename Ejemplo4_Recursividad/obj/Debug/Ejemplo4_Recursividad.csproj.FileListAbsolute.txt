@@ -1,0 +1,6 @@
+C:\Users\Fausto Garcia\Documents\UDG-2020A\Ejemplo4_Recursividad\bin\Debug\Ejemplo4_Recursividad.exe.config
+C:\Users\Fausto Garcia\Documents\UDG-2020A\Ejemplo4_Recursividad\bin\Debug\Ejemplo4_Recursividad.exe
+C:\Users\Fausto Garcia\Documents\UDG-2020A\Ejemplo4_Recursividad\bin\Debug\Ejemplo4_Recursividad.pdb
+C:\Users\Fausto Garcia\Documents\UDG-2020A\Ejemplo4_Recursividad\obj\Debug\Ejemplo4_Recursividad.csprojAssemblyReference.cache
+C:\Users\Fausto Garcia\Documents\UDG-2020A\Ejemplo4_Recursividad\obj\Debug\Ejemplo4_Recursividad.exe
+C:\Users\Fausto Garcia\Documents\UDG-2020A\Ejemplo4_Recursividad\obj\Debug\Ejemplo4_Recursividad.pdb
